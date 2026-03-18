@@ -1,0 +1,59 @@
+Requisitos Funcionais (RF)
+
+São as funcionalidades do sistema, ou seja, o que ele deve fazer.
+
+01 – O sistema deve permitir o cadastro do nome dos alunos.
+
+02 – O sistema deve permitir a inserção das notas de cada aluno.
+
+03 – O sistema deve armazenar os dados em uma estrutura de lista de tuplas.
+
+04 – O sistema deve validar se a lista de notas do aluno não está vazia.
+
+R05 – O sistema deve calcular a média das notas de cada aluno.
+
+06 – O sistema deve identificar alunos em situação de recuperação.
+
+07 – O sistema deve identificar o aluno com maior média (Top Student).
+
+08 – O sistema deve percorrer os dados utilizando estrutura de repetição.
+
+09 – O sistema deve exibir os resultados no terminal.
+
+10 – O sistema deve gerar um relatório final em arquivo .txt contendo os resultados.
+
+
+
+Requisitos Não Funcionais (RNF)
+
+São características de qualidade do sistema.
+
+01 – O sistema deve ser desenvolvido na linguagem Python.
+
+02 – O código deve ser modularizado, separado em main.py e processamento.py.
+
+03 – O sistema deve possuir tratamento de erros para listas de notas vazias.
+
+04 – O código deve ser organizado e de fácil entendimento.
+
+05 – O projeto deve ser versionado utilizando Git e GitHub.
+
+06 – O histórico de commits deve demonstrar o desenvolvimento do projeto.
+
+
+
+Regras de Negócio (RN)
+
+São regras específicas do problema descrito no briefing.
+
+01 – A média do aluno deve ser calculada com base em todas as notas cadastradas.
+
+02 – Alunos com média menor que 7.0 devem ser classificados em recuperação.
+
+03 – O aluno com maior média deve ser identificado como Top Student.
+
+04 – Caso a lista de notas esteja vazia, o sistema deve indicar dados inválidos.
+
+05 – O número de notas pode variar de aluno para aluno.
+
+

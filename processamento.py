@@ -23,3 +23,16 @@ def alunos_recuperacao(alunos):
                 recuperacao.append((nome, media))
 
     return recuperacao
+
+def top_student(alunos):
+    melhor = None
+    maior_media = 0
+
+    for nome, notas in alunos:
+        if validar_notas(notas):
+            media = calcular_media(notas)
+            if media > maior_media:
+                maior_media = media
+                melhor = (nome, media)
+
+    return melhor

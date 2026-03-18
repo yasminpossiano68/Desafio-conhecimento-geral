@@ -36,3 +36,22 @@ def top_student(alunos):
                 melhor = (nome, media)
 
     return melhor
+
+
+def gerar_relatorio(alunos, recuperacao, top):
+    with open("resultado.txt", "w") as arquivo:
+        arquivo.write("RELATÓRIO DE DESEMPENHO\n\n")
+
+        arquivo.write("Todos os alunos:\n")
+        for nome, notas in alunos:
+            if validar_notas(notas):
+                media = calcular_media(notas)
+                arquivo.write(f"{nome} - Média: {media:.2f}\n")
+
+        arquivo.write("\nAlunos em Recuperação:\n")
+        for nome, media in recuperacao:
+            arquivo.write(f"{nome} - Média: {media:.2f}\n")
+
+        arquivo.write("\nTop Student:\n")
+        if top:
+            arquivo.write(f"{top[0]} - Média: {top[1]:.2f}\n")
